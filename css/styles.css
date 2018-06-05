@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-fluido {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    width: 1200px;
+    position: relative;
+}
+.hero{
+    height: 500px;
+    background: red;
+}
+.prueba{
+    height: 200px;
+    width: 200px;
+    background: green;
+    display: block;
+    position: absolute;
+    right: 5%;
+}

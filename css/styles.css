@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    font-size: 100px;
+    font-family: "Asap", sans-serif;
 }
 
 .contenedor-fluido {
@@ -13,9 +15,30 @@ body {
     width: 1200px;
     position: relative;
 }
+.header{
+     height: 60px;
+     position: fixed;
+     z-index: 100;
+     background-color: transparent;
+}
+.header .contenedor{
+    display: flex;
+    align-items: center;
+}
 .hero{
     height: 500px;
     background: red;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:#FFF;
+}
+.logo .logo-logotipo{
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
 }
 .prueba{
     height: 200px;

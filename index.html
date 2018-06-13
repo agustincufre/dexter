@@ -1,30 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Dex's Laboratory: a funny freebie</title>
+    <title>El sitio de Dexter</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link href="https://fonts.googleapis.com/css?family=Asap:400,700,700i" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
 </head>
+
 <body>
+    <div id="fb-root"></div>
+
     <main class="main">
-        <header class="contenedor-fluido header">
+        <header class="contenedor-fluido flex header">
             <div class="contenedor">
                 <a href="index.html" title="Sitio Dexter" class="logo">
-                    <img src="images/logo-isotipo.png" alt="Sitio de Dexter" class="logo-isotipo">
+                    <img src="img/logo-isotipo.png" alt="Sitio de Dexter" class="logo-img">
                     <span class="logo-logotipo">"The Lab"</span>
                 </a>
-            </div> 
+            </div>
         </header>
-        <section class="contenedor-fluido hero">
-            <div class="contenedor">
-                <div class="prueba"></div>
+        <section class="contenedor-fluido flex hero">
+            <div class="contenedor hero-info">
+                <article class="info">
+                    <div>
+                        <h1 class="title">Dex’s Laboratory:
+                            <br />a funny freebie.</h1>
+                        <p class="desc">Brought to You by Balkan Brothers studio... </p>
+                        <a href="#" class="btn btn-download">Le’ Download</a>
+                    </div>
+                </article>
+                <img src="img/smartphone.png" class="smartphone" />
+            </div>
+            <div class="hero-footer contenedor-fluido flex">
+                <div class="contenedor">
+                    We are never empty handed towards our dribbble community.
+                    <div class="fb-like" data-href="https://github.com/DiMaNacho/dexter-site" data-layout="button_count" data-action="like" data-size="small"
+                        data-show-faces="false" data-share="false"></div>
+                    <a class="twitter-share-button miclase" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="large">
+                        Tweet</a>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor-fluido flex bullets">
+            <ul class="contenedor flex vcenter ">
+                <li class="bullets-item flex vcenter spaceship">
+                    <img src="img/icon-spaceship.png" class="img">
+                    <div class="title">
+                        5.5
+                    </div>
+                    <div class="desc">
+                        space trips
+                    </div>
+                </li>
+                <li class="bullets-item flex vcenter bulb">
+                    <img src="img/icon-bulb.png" class="img">
+                    <div class="title">
+                        500+
+                    </div>
+                    <div class="desc">
+                        magic potions
+                    </div>
+                </li>
+                <li class="bullets-item flex vcenter touch">
+                    <img src="img/icon-touch.png" class="img">
+                    <div class="title">
+                        What
+                    </div>
+                    <div class="desc">
+                        does this button do ?
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="contenedor-fluido flex personajes">
+            <div class="contenedor flex">
+                <div class="personajes-item flex item-uno">
+                    <div class="bloque lado-a flex vcenter hcenter">
+                        <img src="img/dexter-lindo.png" alt="Dexter Lindo">
+                    </div>
+                    <div class="bloque lado-b">
+
+                    </div>
+                </div>
+                <div class="personajes-item flex item-dos">
+                    <div class="bloque lado-a">
+
+                    </div>
+                    <div class="bloque lado-b flex vcenter hcenter">
+                        <img src="img/dexters-dee-dee.png" alt="Dexter y su Hermana">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.0';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script>
+        window.twttr = (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+            t._e = [];
+            t.ready = function (f) {
+                t._e.push(f);
+            };
+            return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
 </body>
+
 </html>

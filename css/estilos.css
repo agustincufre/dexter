@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Asap", sans-serif;
+    color: #fff;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .vcenter {
+    align-items: center;
+  }
+  
+  .hcenter {
+    justify-content: center;
+  }
+  
+  .contenedor-fluido {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .contenedor {
+    width: 1200px;
+    position: relative;
+  }
+  
+  .header {
+    height: 60px;
+    position: fixed;
+    background-color: rgba(3, 163, 228, 0.48);
+    z-index: 3;
+  }
+  
+  .header .contenedor {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .logo .logo-logotipo {
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .hero {
+    height: 100vh;
+    background: url(../img/bg.png) #00a3e4;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero .hero-info {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .hero .smartphone {
+    z-index: 2;
+  }
+  
+  .hero .hero-footer {
+    height: 200px;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(73, 185, 230, 0.76);
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero .hero-footer .contenedor {
+    align-items: center;
+    display: flex;
+  }
+  
+  .hero .hero-footer .twitter-share-button {
+    margin-left: 25px;
+  }
+  
+  .btn {
+    background-color: #49b9e6;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.39;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  .btn:hover {
+    background-color: #95cfe6;
+  }
+  
+  .btn.btn-share {
+    background-color: red;
+  }
+  
+  .info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .info .title {
+    font-size: 55px;
+    font-weight: bold;
+    letter-spacing: 2.8px;
+    margin: 0 0 30px;
+  }
+  
+  .info .desc {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.9px;
+    margin: 0 0 37px;
+  }
+  
+  .bullets {
+    height: 490px;
+    background-color: #0084b8;
+  }
+  
+  .bullets .contenedor {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+  }
+  
+  .bullets .bullets-item {
+    flex-direction: column;
+  }
+  
+  .bullets .bullets-item.spaceship img {
+    position: relative;
+    top: 4px;
+  }
+  
+  .bullets .bullets-item.bulb img {
+    position: relative;
+    top: -5px;
+  }
+  
+  .personajes .contenedor {
+    flex-direction: column;
+  }
+  
+  .personajes .personajes-item {
+    height: 700px;
+  }
+  
+  .personajes .personajes-item .bloque {
+    width: 50%;
+  }
